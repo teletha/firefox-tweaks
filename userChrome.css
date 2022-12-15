@@ -118,7 +118,7 @@
 /* #context-openlinkprivate,              /* Open Link in New Private Window  */
 #context-sep-open,                        /* Separator                        */
 #context-bookmarklink,                    /* Bookmark Link                    */
-#context-savelink,                        /* Save Link As…                   */
+#context-savelink,                        /* Save Link As…                    */
 #context-savelinktopocket,                /* Save Link to Pocket              */
 #context-copyemail,                       /* Copy Email Address               */
 /* #context-copylink,                     /* Copy Link                        */
@@ -140,10 +140,10 @@
  * ========================================================================== */
 #context-reloadimage,                   /* Reload Image                       */
 /* #context-viewimage,                  /* Open Image in New Tab              */
-/* #context-saveimage,                  /* Save Image As…                    */
+/* #context-saveimage,                  /* Save Image As…                     */
 /* #context-copyimage-contents,         /* Copy Image                         */
 #context-copyimage,                     /* Copy Image Link                    */
-#context-sendimage,                     /* Email Image…                      */
+#context-sendimage,                     /* Email Image…                       */
 #context-sep-setbackground,             /* Separator                          */
 #context-setDesktopBackground,          /* Set As Desktop Background...       */
 /* #context-sep-ctp,                    /* Separator                          */
