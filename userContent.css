@@ -1,0 +1,125 @@
+/* ==========================================================================
+ * Special Media Pointer
+ * ========================================================================== */
+:-moz-any-link[href$=".pdf"] {
+  cursor: url("moz-icon://.pdf?16"), pointer !important;
+}
+:-moz-any-link[href^="javascript:"], :-moz-any-link[href="#"][onclick] {
+  cursor: url("moz-icon://.js?16"), pointer !important;
+}
+:-moz-any-link[href^="mailto:"] {
+  cursor: url("moz-icon://.eml?16"), pointer !important;
+}
+
+
+/* ==========================================================================
+ * Font Swapping
+ * ========================================================================== */
+@font-face {
+  font-family: "ＭＳ Ｐゴシック";
+  src: local("MeiryoKe_UIGothic");
+}
+
+@font-face {
+  font-family: "MS PGothic";
+  src: local("MeiryoKe_UIGothic");
+}
+
+@font-face {
+  font-family: "ＭＳ Ｐ明朝";
+  src: local("MeiryoKe_UIGothic");
+}
+
+@font-face {
+  font-family: "MS PMincho";
+  src: local("MeiryoKe_UIGothic");
+}
+
+
+/* ==========================================================================
+ * Hide Marquee
+ * ========================================================================== */
+marquee { 
+  -moz-binding: none !important; 
+  display: block; 
+  height: auto !important; 
+}
+
+
+/* ==========================================================================
+ * Mute BGM
+ * ========================================================================== */
+object[data$=".mid"], embed[src$=".mid"], object[data$=".mp3"], embed[src$=".mp3"]{
+  display: none !important;
+}
+
+
+/* ==========================================================================
+ * Error Page Setting
+ * ========================================================================== */
+@-moz-document url-prefix(about:neterror) {
+    html {
+        background: url("MikuIn404.png") !important;
+        margin:0px;
+        background-position:center !important;
+        background-attachment:fixed !important;
+        background-repeat:no-repeat !important;
+    }
+
+    #errorPageContainer {
+        background: url("MikuIn404.png") !important;
+        background-position:center !important;
+        background-attachment:fixed !important;
+        background-repeat:no-repeat !important;
+    } 
+}
+
+
+/* ==========================================================================
+ * Feedly Setting
+ * ========================================================================== */
+@-moz-document domain("feedly.com") {
+    .title,.entryTitle {
+        font-size: 18px !important;
+    }
+    
+    .content {
+        font-size: 12px !important;
+    }
+
+    #feedlyPage,#feedlyPart,.entryBody,.entryTitle,.title{
+        width: 100% !important;
+        max-width: none !important;
+    }
+    
+    #feedlyPart0 {
+        padding-right:33px !important;
+    }
+    
+    #sideArea,#proBanner,#feedlyMessageBar {
+        display:none !important;
+    }
+    
+    
+    #mainBar {
+        width: 910px !important;
+    }
+    
+    #feedlyTabs {
+        overflow: visible !important;
+    }
+}
+
+
+/* ==========================================================================
+ * Twitter Setting
+ * ========================================================================== */
+@-moz-document domain("twitter.com") {
+    .tweet-text, .fullname {
+        font-size: 95%;
+    }
+
+    div[data-promoted="true"] {
+        display:none !important;
+    }
+}
