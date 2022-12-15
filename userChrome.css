@@ -96,7 +96,6 @@
 #context-viewsource,                /* View Page Source                       */
 #context-inspect,                   /* Inspect (Q)                            */
 #context-media-eme-separator,       /* Separator                              */
-#context-inspect-a11y,
 #context-sendpagetodevice,
 #context-sep-sendpagetodevice,
 #context-sendlinktodevice,
@@ -126,7 +125,7 @@
 #context-sendlinktodevice,                /* Send Link to Device              */
 #context-sep-sendlinktodevice,            /* Separator                        */
 #context-sep-copylink,                    /* Separator                        */
-#context-searchselect,                    /* Search [Google] for "[selected]" */
+/* #context-searchselect,                 /* Search [Google] for "[selected]" */
 /* #frame-sep,                            /* Separator                        */
 #context-inspect                          /* Inspect (Q)                      */
 {
@@ -149,6 +148,26 @@
 #context-setDesktopBackground,          /* Set As Desktop Background...       */
 /* #context-sep-ctp,                    /* Separator                          */
 #context-inspect                        /* Inspect (Q)                        */
+{
+  display:none !important;
+}
+
+
+/* ==========================================================================
+ * ContextMenu Cleaner
+ *
+ * For Selection
+ * ========================================================================== */
+/* #context-openlinkincurrent,            /* Open Link                        */
+/* #context-copy,                         /* Copy                             */
+/* #context-selectall,                    /* Select All                       */
+#context-print-selection,                 /* Print Selection                  */
+/* #context-sep-selectall,                /* Separator                        */
+/* #context-searchselect,                 /* Search [Google] for "[selected]" */
+/* #frame-sep,                            /************ Separator *************/
+#context-viewpartialsource-selection,     /* View Selection Source            */
+#context-inspect-a11y,                    /* Inspect Accessibility Properties */
+#context-inspect                          /* Inspect (Q)                      */
 {
   display:none !important;
 }
