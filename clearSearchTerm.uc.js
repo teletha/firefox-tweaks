@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name          ClearSeachTerm.uc.js
-// @description		Clear the search box and restore the search engine.
+// @description   Clear the search box and restore the search engine.
 // @include       main
-// @charset			  utf-8
+// @charset       utf-8
 // ==/UserScript==
 (function(){
 	const afterSearch = true;
