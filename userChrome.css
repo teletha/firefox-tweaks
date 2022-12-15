@@ -1,0 +1,154 @@
+@charset "utf-8";
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+/* ==========================================================================
+ * Tabbar Cleaner
+ *
+ * 1 Hide close button on tab
+ * ========================================================================== */
+.tab-close-button {
+  display: none;
+}
+
+
+/* ==========================================================================
+ * Sidebar Cleaner
+ *
+ * 1 Hide header panel
+ * 2 Hide yellow dotted outline on selected item
+ * 3 Hide open/close icon on tree
+ * ========================================================================== */
+#sidebar-header {
+  display: none;
+}
+
+#bookmarksPanel treechildren::-moz-tree-row(selected),
+#history-panel treechildren::-moz-tree-row(selected),
+#pageMain treechildren::-moz-tree-row(selected) {
+  outline: none !important;
+}
+
+#bookmarksPanel treechildren::-moz-tree-twisty,
+#history-panel treechildren::-moz-tree-twisty,
+#pageMain treechildren::-moz-tree-twisty {
+  list-style-image: none !important;
+  width: 0px !important;
+  padding: 0px !important;
+}
+
+
+/* ==========================================================================
+ * Sliding Bookmarks Bar for 108+
+ * 
+ * Makes the bookmarks bar slide down on hover or when menubar is enabled.
+ * ========================================================================== */
+#nav-bar {
+   z-index: 3 !important;
+}
+
+#PersonalToolbar:not([customizing]) {
+   position: relative !important;
+   margin-top: -36px !important;
+   padding-top: 4px !important;
+   padding-bottom: 5px !important;
+   border: none; 
+   transition: transform 0.2s !important;
+   z-index: 2;
+}
+
+#PersonalToolbar:not([customizing]):hover {
+  transform: translateY(32px);
+}
+
+.bookmark-item {
+  margin: 0 !important;
+  cursor: pointer !important;
+}
+
+.bookmark-item > .toolbarbutton-text  {
+  display: block;
+  padding: 4px 0 !important;
+  width: 75px !important;
+}
+
+.bookmark-item > .toolbarbutton-icon  {
+  display: none !important;
+}
+
+/* ==========================================================================
+ * ContextMenu Cleaner
+ *
+ * Common
+ * ========================================================================== */
+#context-navigation,                /* Hide whole navigation bar              */
+#context-back,                      /* Navi: Back arrow                       */
+#context-forward,                   /* Navi: Forward arrow                    */
+#context-reload,                    /* Navi: Reload icon                      */
+#context-stop,                      /* Navi: Stop icon (x)                    */
+#context-bookmarkpage,              /* Navi: Bookmark star icon               */
+#context-sep-navigation,            /* Separator                              */
+#context-savepage,                  /* Save Page As...                        */
+#context-pocket,                    /* Save Page to Pocket                    */
+#context-selectall,                 /* Select All                             */
+#context-sep-selectall,             /* Separator                              */
+#context-take-screenshot,           /* Take Screenshot                        */
+#context-sep-screenshots,           /* Separator                              */
+#context-viewsource,                /* View Page Source                       */
+#context-inspect,                   /* Inspect (Q)                            */
+#context-media-eme-separator,       /* Separator                              */
+#context-inspect-a11y,
+#context-sendpagetodevice,
+#context-sep-sendpagetodevice,
+#context-sendlinktodevice,
+#context-sep-sendlinktodevice,
+#context_sendTabToDevice,
+#context_sendTabToDevice_separator
+{
+  display: none !important;
+}
+
+
+/* ==========================================================================
+ * ContextMenu Cleaner
+ *
+ * For Link
+ * ========================================================================== */
+#context-openlinkintab,                   /* Open Link in New Tab             */
+/* #context-openlinkinusercontext-menu,   /* Open Link in New Container Tab   */
+#context-openlink,                        /* Open Link in New Window          */
+/* #context-openlinkprivate,              /* Open Link in New Private Window  */
+#context-sep-open,                        /* Separator                        */
+#context-bookmarklink,                    /* Bookmark Link                    */
+#context-savelink,                        /* Save Link As…                   */
+#context-savelinktopocket,                /* Save Link to Pocket              */
+#context-copyemail,                       /* Copy Email Address               */
+/* #context-copylink,                     /* Copy Link                        */
+#context-sendlinktodevice,                /* Send Link to Device              */
+#context-sep-sendlinktodevice,            /* Separator                        */
+#context-sep-copylink,                    /* Separator                        */
+#context-searchselect,                    /* Search [Google] for "[selected]" */
+/* #frame-sep,                            /* Separator                        */
+#context-inspect                          /* Inspect (Q)                      */
+{
+  display:none !important;
+}
+
+
+/* ==========================================================================
+ * ContextMenu Cleaner
+ *
+ * For Image
+ * ========================================================================== */
+#context-reloadimage,                   /* Reload Image                       */
+/* #context-viewimage,                  /* Open Image in New Tab              */
+/* #context-saveimage,                  /* Save Image As…                    */
+/* #context-copyimage-contents,         /* Copy Image                         */
+#context-copyimage,                     /* Copy Image Link                    */
+#context-sendimage,                     /* Email Image…                      */
+#context-sep-setbackground,             /* Separator                          */
+#context-setDesktopBackground,          /* Set As Desktop Background...       */
+/* #context-sep-ctp,                    /* Separator                          */
+#context-inspect                        /* Inspect (Q)                        */
+{
+  display:none !important;
+}
