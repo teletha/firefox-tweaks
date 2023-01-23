@@ -67,8 +67,7 @@
 
 .bookmark-item > .toolbarbutton-text  {
   display: block;
-  padding: 4px 0 !important;
-  width: 75px !important;
+  padding: 4px 20px !important;
 }
 
 .bookmark-item > .toolbarbutton-icon  {
