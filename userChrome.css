@@ -51,7 +51,6 @@
    padding-top: 4x !important;
    padding-bottom: 4px !important;
    transition: all 0.2s !important;
-   z-index: 4;
 }
 
 #PersonalToolbar:not([customizing]):hover {
