@@ -48,8 +48,8 @@
 
 #PersonalToolbar:not([customizing]) {
    margin-top: -36px !important;
-   padding-top: 4x !important;
-   padding-bottom: 4px !important;
+   padding-top: 5px !important;
+   padding-bottom: 5px !important;
    transition: all 0.2s !important;
 }
 
