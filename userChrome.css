@@ -42,23 +42,20 @@
  * 
  * Makes the bookmarks bar slide down on hover or when menubar is enabled.
  * ========================================================================== */
-#nav-bar {
-   z-index: 3 !important;
+#navigator-toolbox, #nav-bar {
+   z-index: 5 !important;
 }
 
 #PersonalToolbar:not([customizing]) {
-   position: relative !important;
    margin-top: -36px !important;
-   padding-top: 4px !important;
-   padding-bottom: 5px !important;
-   border: none; 
+   padding-top: 4x !important;
+   padding-bottom: 4px !important;
    transition: all 0.2s !important;
-   z-index: 2;
+   z-index: 4;
 }
 
 #PersonalToolbar:not([customizing]):hover {
-  transform: translateY(6px);
-	margin-top: -10px !important;
+  transform: translateY(32px);
 }
 
 .bookmark-item {
